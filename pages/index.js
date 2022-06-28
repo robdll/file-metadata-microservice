@@ -28,7 +28,7 @@ export default function Home() {
           method="post"
           encType="multipart/form-data"
         >
-          <input className={styles.input} name="user_file" type="file" />
+          <input className={styles.input} name="upfile" type="file" />
           <br />
           <button className={styles.btn} type="submit">
             Upload
