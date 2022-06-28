@@ -18,14 +18,18 @@ export default function Home() {
       <h1 className={styles.title}>File Metadata Microservice</h1>
 
       <main className={styles.main}>
+        <p className={styles.description}>Usage</p>
+        <span className={styles.span}>
+          Choose a file then click the upload button
+        </span>
         <form
           className={styles.form}
           action="/api/fileanalyse"
           method="post"
           encType="multipart/form-data"
         >
-          <label htmlFor="user_file">File: </label>
           <input className={styles.input} name="user_file" type="file" />
+          <br />
           <button className={styles.btn} type="submit">
             Upload
           </button>
